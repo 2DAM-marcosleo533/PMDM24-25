@@ -1,0 +1,104 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@android:color/white">
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:id="@+id/xilofono"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/do_button"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="DO"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="@color/red"
+                android:layout_margin="8dp"/>
+
+            <Button
+                android:id="@+id/re_button"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="RE"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="@color/orange"
+                android:layout_margin="8dp"/>
+
+            <Button
+                android:id="@+id/mi_button"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="MI"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="@color/yellow"
+                android:layout_margin="8dp"/>
+
+            <Button
+                android:id="@+id/fa_button"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="FA"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="@color/green"
+                android:layout_margin="8dp"/>
+
+            <Button
+                android:id="@+id/sol_button"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="SOL"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="@color/sky"
+                android:layout_margin="8dp"/>
+
+            <Button
+                android:id="@+id/la_button"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="LA"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="@color/blue"
+                android:layout_margin="8dp"/>
+
+            <Button
+                android:id="@+id/si_button"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="SI"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="@color/purple"
+                android:layout_margin="8dp"/>
+
+            <Button
+                android:id="@+id/do_high_button"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="DO"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="@color/violet"
+                android:layout_margin="8dp"/>
+
+        </LinearLayout>
+    </HorizontalScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
