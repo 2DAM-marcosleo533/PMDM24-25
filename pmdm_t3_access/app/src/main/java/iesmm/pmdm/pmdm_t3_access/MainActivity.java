@@ -64,7 +64,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void OnDestroy(){
         saveInFile("SALIDA" + LocalDateTime.now().toString());
-        background
+
         super.onDestroy();
 
     }
@@ -83,19 +83,29 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-    private void addTextView(String cad){
-        //1. Localizar el layout para agregarle el componente
+    private void addTextView(String cad) {
+        // 1. Localizar el layout para agregarle el componente
         LinearLayout layout = this.findViewById(R.id.container);
 
-        //2. Personalizar TextView
+        // 2. Personalizar TextView
         TextView box = new TextView(this);
         box.setText(cad);
 
         box.setGravity(Gravity.CENTER);
-        box.setBackgroundColor(Color.GREEN);
         box.setPadding(10, 20, 10, 20);
 
-        //3. Agregar TextView al layour
+
+        if (cad.contains("ENTRADA")) {
+            box.setBackgroundColor(Color.GREEN);
+        } else if (cad.contains("SALIDA")) {
+            box.setBackgroundColor(Color.RED);
+        } else {
+            box.setBackgroundColor(Color.YELLOW);
+        }
+
+        // 3. Agregar TextView al layout
         layout.addView(box);
     }
+
+
 }
